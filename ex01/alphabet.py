@@ -29,9 +29,9 @@ def kaito(seikai):
     if num != num_of_abs_chars:
         print("不正解です．")
     else:
-        print("あたり！．じゃあ，具体的に欠損文字を1つずつ入力してね！．")
+        print("あたり！．じゃあ，具体的に欠損文字を1つずつ入力してね！．")#1に対しての修正
         for i in range(num):
-            c = input(f"{i+1}文字目を入力してください：")
+            c = input(f"{i+1}文字目を入力してください：")#2に対しての変更
             if c not in seikai:
                 print("不正解です．またチャレンジしてください．")
                 return False
