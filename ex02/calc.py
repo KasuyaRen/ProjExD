@@ -16,6 +16,7 @@ def click_equal(event):
 
 def click_sakujo(event):
     entry.delete(0, tk.END)
+    
 def click_modoru(event):
     a = len(entry.get())-1
     entry.delete(a,tk.END)
