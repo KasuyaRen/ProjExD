@@ -13,7 +13,10 @@ def check_bound(obj_rct, scr_rct):
     if obj_rct.top < scr_rct.top or scr_rct.bottom < obj_rct.bottom: 
         tate = -1
     return yoko, tate
-def main():
+
+
+
+def main():# 行間をあけた
     # 練習1
     pg.display.set_caption("逃げろ!八尺瓊勾玉!")
     scrn_sfc = pg.display.set_mode((1600, 900))
@@ -81,7 +84,7 @@ def main():
                 tori_rct.centery -= 1            
         scrn_sfc.blit(tori_sfc, tori_rct) # 練習3
         scrn_sfc.blit(kizaru_sfc, kizaru_rct)
-        # 連取7
+        # 練習7
         yoko, tate = check_bound(bomb_rct, scrn_rct)
         vx *= yoko
         vy *= tate
