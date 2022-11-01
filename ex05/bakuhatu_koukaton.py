@@ -130,7 +130,6 @@ class music:
         #pygame.mixer.music.stop()               # 再生の終了
     def stop_music(self):
         pygame.mixer.music.stop()
-    
         
 if __name__ == "__main__":
     pg.init() # 初期化
