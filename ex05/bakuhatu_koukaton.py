@@ -5,7 +5,6 @@ import pygame.mixer
 import time
 
 
-
 class Screen:
     def __init__(self, title, wh, bgimg):
         pg.display.set_caption(title) #逃げろ！こうかとん
@@ -113,13 +112,15 @@ def main():
 
         # 練習8
         if kkt.rct.colliderect(bkd.rct): # こうかとんrctが爆弾rctと重なったら
-            bg.play_music("ex05/data/爆発2.mp3",1)
-            time.sleep(1)    
+            bg.play_music("ex05/data/爆発2.mp3",5)
+            time.sleep(10)    
             bg.stop_music()
             return
 
         pg.display.update() #練習2
         clock.tick(1000)
+    #8 の修正
+
 class music:
     def play_music(self,filename,play_count):
         pygame.mixer.init(frequency = 44100)    # 初期設定
